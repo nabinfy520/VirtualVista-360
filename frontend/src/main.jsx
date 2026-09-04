@@ -58,7 +58,7 @@ function App() {
   const [id, setId] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/tours/heritage-demo")
+    fetch("https://virtualvista-api.onrender.com/api/tours/heritage-demo")
       .then((r) => r.json())
       .then((x) => {
         setT(x);
